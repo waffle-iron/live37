@@ -147,5 +147,4 @@ $config = [
     $config['modules']['gii'] = 'yii\gii\Module';
 }*/
 
-$localDb = dirname(__DIR__) . '/../../localdb.php';
-return \yii\helpers\ArrayHelper::merge($config, require($localDb));
+return \yii\helpers\ArrayHelper::merge($config, require('/var/wwws/live37.ru/localdb.php'));
