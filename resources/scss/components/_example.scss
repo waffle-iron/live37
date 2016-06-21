@@ -1,0 +1,8 @@
+.example {
+    margin: 50px 0;
+
+    div[class^=col-] {
+        background-color: $alert-info-bg;
+        border: 1px solid $alert-info-border;
+    }
+}
