@@ -147,5 +147,5 @@ $config = [
     $config['modules']['gii'] = 'yii\gii\Module';
 }*/
 
-$localDb = Yii::getAlias('@app/../../localdb.php');
+$localDb = \Yii::getAlias('@app/../../localdb.php');
 return \yii\helpers\ArrayHelper::merge($config, require($localDb));
