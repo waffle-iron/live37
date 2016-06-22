@@ -128,8 +128,18 @@ $config = [
                 ],
             ],
         ],
+        'log' => [
+            'traceLevel' => 3,
+            'targets' => [
+                [
+                    'class'  => 'yii\log\FileTarget',
+                    'levels' => ['error', 'warning', 'info', 'trace', 'profile'],
+                ],
+            ],
+        ],
     ],
     'bootstrap' => [
+        'log',
         'cms',
     ],
 ];
