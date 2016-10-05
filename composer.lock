@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c3b0c5957056a175582136f5a259a029",
-    "content-hash": "c7011bc8c9d440d613e2d186ba398918",
+    "hash": "a74da5a65c0b18cc86fc7a8449e9cf5f",
+    "content-hash": "8171b682c2a90cdd28b6af1ac85aa5ea",
     "packages": [
         {
             "name": "bower-asset/jquery",
@@ -643,6 +643,55 @@
                 "yii2-cms"
             ],
             "time": "2016-10-04 12:01:26"
+        },
+        {
+            "name": "luyadev/luya-module-news",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/luyadev/luya-module-news.git",
+                "reference": "ac31de1666daaede4885746dc59df5e7d61a042c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/luyadev/luya-module-news/zipball/ac31de1666daaede4885746dc59df5e7d61a042c",
+                "reference": "ac31de1666daaede4885746dc59df5e7d61a042c",
+                "shasum": ""
+            },
+            "type": "luya-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "luya\\news\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Basil",
+                    "email": "git@nadar.io",
+                    "homepage": "https://github.com/nadar"
+                }
+            ],
+            "description": "The news module will provided you a basic news system with categories and tags.",
+            "homepage": "http://luya.io",
+            "keywords": [
+                "luya",
+                "luya-module",
+                "module",
+                "news",
+                "php",
+                "yii",
+                "yii2"
+            ],
+            "time": "2016-09-14 12:13:48"
         },
         {
             "name": "nadar/yii2-imagine",
@@ -2834,10 +2883,11 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "luyadev/luya-core": 5,
-        "luyadev/luya-module-cms": 5,
-        "luyadev/luya-module-admin": 5,
+        "luyadev/luya-core": 20,
+        "luyadev/luya-module-admin": 20,
+        "luyadev/luya-module-cms": 20,
         "luyadev/luya-bootstrap4": 20,
+        "luyadev/luya-module-news": 20,
         "luyadev/luya-deployer": 20
     },
     "prefer-stable": false,

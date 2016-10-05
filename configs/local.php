@@ -68,6 +68,9 @@ $config = [
          * This is the administration module for the `cms` module.
          */
         'cmsadmin' => 'luya\cms\admin\Module',
+
+        'news' => 'luya\news\frontend\Module',
+        'newsadmin' => 'luya\news\admin\Module',
     ],
     'components' => [
 
