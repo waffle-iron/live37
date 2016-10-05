@@ -134,7 +134,7 @@ $config = [
             'traceLevel' => 3,
             'targets' => [
                 [
-                    'class'  => 'yii\log\FileTarget',
+                    'class' => 'yii\log\FileTarget',
                     'levels' => ['error', 'warning', 'info', 'trace', 'profile'],
                 ],
             ],
@@ -159,4 +159,4 @@ $config = [
     $config['modules']['gii'] = 'yii\gii\Module';
 }*/
 
-return \yii\helpers\ArrayHelper::merge($config, require(__DIR__.'/localdb.php'));
+return \yii\helpers\ArrayHelper::merge($config, require(__DIR__ . '/localdb.php'));
