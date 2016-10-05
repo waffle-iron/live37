@@ -116,7 +116,6 @@ $config = [
          */
         'cache' => [
             'class' => 'yii\caching\MemCache',
-            'useMemcached' => true,
             'keyPrefix' => 'local37_',
         ],
 
