@@ -17,17 +17,17 @@ $config = [
     /*
      * For best interoperability it is recommended that you use only alphanumeric characters when specifying an application ID
      */
-    'id' => 'myproject',
+    'id' => 'live37',
 
     /*
      * The name of your site, will be display on the login screen
      */
-    'siteTitle' => 'My Project',
+    'siteTitle' => 'Live 37',
 
     /*
      * Set the administration area language. Available language short codes: "en", "de" and "ru"
      */
-    'luyaLanguage' => 'en',
+    'luyaLanguage' => 'ru',
 
     /*
      * Let the application know which module should be executed by default (if no url is set). This module must be included
@@ -104,7 +104,7 @@ $config = [
          */
         'composition' => [
             'hidden' => true, // you will not have languages in your url (most case for pages which are not multi lingual)
-            'default' => ['langShortCode' => 'en'], // the default language for the composition should match your default language shortCode in the langauge table.
+            'default' => ['langShortCode' => 'ru'], // the default language for the composition should match your default language shortCode in the langauge table.
         ],
 
         /*
