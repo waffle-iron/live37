@@ -1,40 +1,39 @@
 {
-    "name": "luyadev/luya-boilerplate-bootstrap4",
-    "description": "LUYA boilerplate to kickstart projects with Bootstrap 4.",
-    "type": "project",
-    "license":"MIT",
-    "require": {
-        "luyadev/luya-core" : "1.0.0-beta8",
-        "luyadev/luya-module-admin" : "1.0.0-beta8",
-        "luyadev/luya-module-cms" : "1.0.0-beta8",
-        "luyadev/luya-module-cmsadmin" : "1.0.0-beta8",
-        "luyadev/luya-bootstrap4": "^1.0@dev"
+  "name": "luyadev/luya-boilerplate-bootstrap4",
+  "description": "LUYA boilerplate to kickstart projects with Bootstrap 4.",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "luyadev/luya-core": "^1.0@dev",
+    "luyadev/luya-module-admin": "^1.0@dev",
+    "luyadev/luya-module-cms": "^1.0@dev",
+    "luyadev/luya-bootstrap4": "^1.0@dev"
+  },
+  "require-dev": {
+    "yiisoft/yii2-debug": "~2.0.0",
+    "yiisoft/yii2-gii": "~2.0.0",
+    "luyadev/luya-deployer": "^1.0@dev"
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "yii\\composer\\Installer::postCreateProject"
+    ]
+  },
+  "extra": {
+    "yii\\composer\\Installer::postCreateProject": {
+      "setPermission": [
+        {
+          "public_html/assets": "0777",
+          "public_html/storage": "0777"
+        }
+      ]
     },
-    "require-dev": {
-        "yiisoft/yii2-debug" : "~2.0.0",
-        "yiisoft/yii2-gii" : "~2.0.0",
-        "luyadev/luya-deployer": "^1.0@dev"
+    "asset-installer-paths": {
+      "bower-asset-library": "vendor/bower"
     },
-    "scripts": {
-        "post-create-project-cmd": [
-            "yii\\composer\\Installer::postCreateProject"
-        ]
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
     },
-    "extra": {
-        "yii\\composer\\Installer::postCreateProject": {
-			"setPermission": [
-				{
-				    "public_html/assets": "0777",
-					"public_html/storage": "0777"
-				}
-			]
-		},
-        "asset-installer-paths": {
-            "bower-asset-library": "vendor/bower"
-        },
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        },
-        "asset-pattern-skip-version": "(-build|-patch)"
-    }
+    "asset-pattern-skip-version": "(-build|-patch)"
+  }
 }

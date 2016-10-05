@@ -39,3 +39,4 @@ composer.phar
 # Compiled files
 /resources/local/
 /deploy.php
+/id_rsa
